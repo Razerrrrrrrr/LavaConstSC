@@ -1,0 +1,15 @@
+LavaConstSC
+===========
+
+The package dev.lavaconst.soundcloud is derived from lavaplayer's SoundCloud source
+(com.sedmelluq.discord.lavaplayer.source.soundcloud, https://github.com/lavalink-devs/lavaplayer),
+version 2.2.6, licensed under the Apache License 2.0 (see LICENSE).
+
+Changes from the original:
+- AAC in fragmented-MP4 HLS support (SoundCloudAacSegmentDecoder), including a synthetic sidx box so lavaplayer's
+  MP4 reader does not drop the first fragment.
+- The HLS initialization segment (EXT-X-MAP) is prepended to every segment stream.
+- Signed *.soundcloud.cloud CDN URLs no longer get a client_id appended.
+- A clear error for DRM-protected tracks, and a log line listing the formats SoundCloud offered when none is playable.
+- Search results and playlists skip unplayable tracks instead of failing as a whole.
+- Packaged as a Lavalink plugin (dev.lavaconst.soundcloud.plugin).
