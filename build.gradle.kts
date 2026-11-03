@@ -54,6 +54,7 @@ dependencies {
     compileOnly("dev.arbjerg:lavaplayer:2.2.6")
     compileOnly("org.apache.httpcomponents:httpclient:4.5.14")
     compileOnly("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+    compileOnly("commons-io:commons-io:2.11.0")
     compileOnly("org.slf4j:slf4j-api:2.0.7")
     compileOnly("org.jetbrains:annotations:24.0.0")
 }
